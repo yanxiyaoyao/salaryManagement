@@ -1,0 +1,96 @@
+.dashboard {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+    .page-title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .page-subtitle {
+      margin: 6px 0 0;
+      color: #64748b;
+    }
+  }
+
+  .overview-row {
+    margin-bottom: 20px;
+
+    .stat-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      &__icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__description {
+        color: #64748b;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .content-row {
+    .chart-card {
+      .chart-placeholder {
+        height: 220px;
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(37, 99, 235, 0.1),
+          rgba(37, 99, 235, 0.1) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+        border: 1px dashed rgba(37, 99, 235, 0.35);
+        border-radius: 12px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2563eb;
+      }
+
+      .category-progress {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        &__label {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+
+          .amount {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .activity-card {
+      .activity-amount {
+        font-size: 14px;
+        min-width: 90px;
+        text-align: center;
+      }
+    }
+  }
+}
+

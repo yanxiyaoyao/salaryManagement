@@ -1,0 +1,63 @@
+.categories-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-title {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .page-subtitle {
+      margin: 6px 0 0;
+      color: #64748b;
+    }
+  }
+
+  .table-card {
+    .table-toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .color-picker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    input[type='color'] {
+      width: 40px;
+      height: 32px;
+      padding: 0;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      border-radius: 6px;
+      cursor: pointer;
+      background: transparent;
+    }
+
+    .color-swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+  }
+}

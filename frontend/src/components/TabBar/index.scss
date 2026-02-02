@@ -1,0 +1,140 @@
+.tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #ffffff, #fafafa);
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 12px;
+  height: 44px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+
+  .tabs-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 2px;
+    min-width: 0;
+
+    .tab-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: #f5f5f5;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+      position: relative;
+      color: #595959;
+      font-size: 13px;
+
+      &:hover {
+        background: #efefef;
+        border-color: #d9d9d9;
+        color: #262626;
+
+        .tab-close {
+          opacity: 1;
+        }
+      }
+
+      &.active {
+        background: #ffffff;
+        border-color: #1890ff;
+        border-bottom: 2px solid #1890ff;
+        color: #1890ff;
+        font-weight: 500;
+        box-shadow: 0 -2px 4px rgba(24, 144, 255, 0.08);
+
+        .tab-label {
+          color: #1890ff;
+        }
+
+        .tab-close {
+          opacity: 0.8;
+        }
+      }
+
+      .tab-label {
+        flex: 0 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 140px;
+        font-size: 13px;
+      }
+
+      .tab-close {
+        flex-shrink: 0;
+        opacity: 0.45;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+
+        &:hover {
+          opacity: 1;
+          color: #ff4d4f;
+          background: rgba(255, 77, 79, 0.1);
+        }
+      }
+    }
+  }
+
+  .tab-actions {
+    display: flex;
+    gap: 4px;
+    margin-left: 8px;
+    flex-shrink: 0;
+    padding-left: 8px;
+    border-left: 1px solid #e8e8e8;
+
+    button {
+      font-size: 12px;
+      padding: 4px 8px;
+      height: 28px;
+      border-radius: 2px;
+      transition: all 0.25s;
+      min-width: 28px;
+
+      &:hover {
+        color: #1890ff;
+        background: rgba(24, 144, 255, 0.08);
+      }
+
+      &.action-dropdown-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  /* 自定义滚动条 */
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border-radius: 3px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #bfbfbf;
+    }
+  }
+}

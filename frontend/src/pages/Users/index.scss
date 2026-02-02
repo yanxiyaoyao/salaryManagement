@@ -1,0 +1,44 @@
+.users-page {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .page-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .role-tag {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+
+    &.role-admin {
+      background: #fff7e6;
+      color: #d46b08;
+    }
+
+    &.role-user {
+      background: #e6f7ff;
+      color: #1890ff;
+    }
+
+    &.role-guest {
+      background: #f6ffed;
+      color: #52c41a;
+    }
+  }
+
+  .status-active {
+    color: #52c41a;
+  }
+
+  .status-inactive {
+    color: #ff4d4f;
+  }
+}
+

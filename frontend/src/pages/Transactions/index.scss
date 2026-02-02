@@ -1,0 +1,49 @@
+.transactions-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-title {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .page-subtitle {
+      margin: 6px 0 0;
+      color: #64748b;
+    }
+  }
+
+  .summary-row {
+    .summary-card {
+      box-shadow: none;
+      border-radius: 10px;
+    }
+  }
+
+  .filters-card {
+    .ant-space {
+      width: 100%;
+    }
+  }
+
+  .table-card {
+    .amount {
+      font-weight: 600;
+
+      &.income {
+        color: #16a34a;
+      }
+
+      &.expense {
+        color: #ef4444;
+      }
+    }
+  }
+}

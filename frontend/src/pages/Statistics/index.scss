@@ -1,0 +1,61 @@
+.statistics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-title {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .page-subtitle {
+      margin: 6px 0 0;
+      color: #64748b;
+    }
+  }
+
+  .filters-card {
+    .filters-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+
+      .ant-space {
+        flex: 1;
+        min-width: 0;
+      }
+
+      button {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .summary-row {
+    .summary-card {
+      box-shadow: none;
+      border-radius: 10px;
+    }
+  }
+
+  .chart-card {
+    .chart-container {
+      height: 280px;
+      width: 100%;
+    }
+  }
+
+  .list-card {
+    .ant-list-item {
+      align-items: flex-start;
+    }
+  }
+}

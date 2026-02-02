@@ -10,18 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.30.2",
-    "react-redux": "^9.2.0",
-    "@reduxjs/toolkit": "^2.2.0",
-    "antd": "^5.29.1",
-    "axios": "^1.13.2",
+    "@ant-design/icons": "^5.2.6",
+    "@reduxjs/toolkit": "^2.0.1",
+    "antd": "^5.12.0",
+    "axios": "^1.6.2",
     "echarts": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.20.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "vite": "^5.4.21",
-    "@vitejs/plugin-react": "^4.3.4"
+    "@vitejs/plugin-react": "^4.3.4",
+    "sass": "^1.97.3",
+    "vite": "^5.4.21"
   }
 }
